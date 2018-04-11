@@ -8,32 +8,62 @@ html {
 
 
 body {
-    font-family: Roboto;
+
+    font-family: Arial;
+    font-style: inherit;
     font-size: 16px;
     color: #424242;
 }
 
-e
+
+.container__wrap {
+/*    margin: 2em auto;*/
+    display: flex; /* check */
+    flex-direction: column; /* check */
+    flex-wrap: wrap;
+
+}
+
+
 .title,
 .app,
 .screenshot,
 .description {
 
+
 }
 
-.title {
 
+.title {
+    width: 100%;
+    text-transform: uppercase;
+    background-color: #2ebdbf;
+    height: 5em;
+    display: flex;
+    text-indent: 20px;
+}
+
+
+h1 {
+    font-size: 2.8em;
+    color: #fff;
+    align-self: flex-end;
+    font-weight: 100;
+    margin-left: 20px;
 }
 
 
 .app {
-
+    margin-top: 2em;
+    width: 100%;
+    display: flex;
 }
 
 
 h1, h2, h3, h4, h5 {
     margin: 0;
 }
+
 
 header,
 nav,
@@ -53,10 +83,38 @@ ul {
 
 
 .screenshot {
-
+    min-width: 40%;
 }
 
 
 .description {
+    width: 70%;
+    margin: 0 1.1em;
+    font-size: 1.1em;
+    line-height: 1.7em;
+    font-family: consolas, "Liberation Mono", courier, monospace;
+}
 
+
+p {
+
+
+
+}
+
+em {
+    font-weight: bolder;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (min-width: 640px) {
+    .container__wrap {
+        width: 760px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
