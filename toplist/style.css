@@ -1,6 +1,8 @@
-* {
+/** For `outlining`:
+
+*{
     outline: 1px solid red !important;
-}
+}*/
 
 
 * {
@@ -11,9 +13,19 @@
 }
 
 
+h1 {
+    background-color: #33BEBE;
+    color: #ffffff;
+}
+
+.title {
+    max-width: 1165px;
+}
+
 .app {
     display: -webkit-flex;
     display: flex;
+    margin-top: 36px;
 }
 
 
@@ -23,5 +35,7 @@
 
 
 .screenshot {
+    margin-right: 36px;
     max-width: 460px;
 }
+
