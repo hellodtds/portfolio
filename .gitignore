@@ -1,1 +1,4 @@
 boxes__to__html.html
+
+# exclude bootstrap content
+framework/bootstrap*
